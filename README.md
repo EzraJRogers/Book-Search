@@ -1,3 +1,4 @@
+![App Screenshot](images/image.png)
 
 # Book Search Engine
 
