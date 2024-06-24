@@ -11,7 +11,7 @@ export const LOGIN = gql`mutation login($email: String!, $password: String!) {
   }
 }`
 
-export const ADD_USER = gql`mutation AddUser($username: String!, $email: String!, $password: String!) {
+export const ADD_USER = gql`mutation addUser($username: String!, $email: String!, $password: String!) {
   addUser(username: $username, email: $email, password: $password) {
     token
     user {
@@ -20,7 +20,7 @@ export const ADD_USER = gql`mutation AddUser($username: String!, $email: String!
       username
     }
   }
-}`
+}`;
 
 export const SAVE_BOOK = gql`mutation Savebook($bookId: ID!, $descripion: String!, $title: String!, $authors: [String], $image: String, $link: String) {
   savebook(bookId: $bookId, descripion: $descripion, title: $title, authors: $authors, image: $image, link: $link) {
